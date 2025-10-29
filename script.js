@@ -14,3 +14,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+// Close menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
