@@ -35,6 +35,13 @@ header {
     font-weight: bold;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -80,6 +87,18 @@ header {
     .nav-links.active {
         right: 0;
     }
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
 }
 
 
