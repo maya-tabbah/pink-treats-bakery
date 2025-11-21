@@ -65,6 +65,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mayat\WebstormProjects\pink-treats-bakery\pink-treats\archive" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="old-index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pink-treats-bakery/pink-treats/archive/old-index.html" useBuiltInWebServerPort="true">
       <method v="2" />
