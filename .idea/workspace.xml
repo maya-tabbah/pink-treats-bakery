@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d091d65-8c7a-4272-85a4-ea9a97985881" name="Changes" comment="shopping cart function added" />
+    <list default="true" id="5d091d65-8c7a-4272-85a4-ea9a97985881" name="Changes" comment="react">
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/MenuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/Order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/orders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/seed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vanilla-Pink-Cupcake.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Vanilla-Pink-Cupcake.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinkbakery.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/pinkbakery.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,13 +35,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="helppls" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;maya-tabbah&quot;
-  }
+  &quot;lastFilter&quot;: {}
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -39,29 +58,44 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="34kiTgEcfk6x4pszT0VY539pT4b" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "C:/Users/mayat/AppData/Roaming/JetBrains/WebStorm2025.2/node/versions/24.11.0/node",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ugh&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/mayat/AppData/Roaming/JetBrains/WebStorm2025.2/node/versions/24.11.0/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mayat\WebstormProjects\pink-treats-bakery\src\assets\images" />
+      <recent name="C:\Users\mayat\WebstormProjects\pink-treats-bakery\src\assets" />
+      <recent name="C:\Users\mayat\WebstormProjects\pink-treats-bakery\src" />
+      <recent name="C:\Users\mayat\WebstormProjects\pink-treats-bakery" />
+      <recent name="C:\Users\mayat\WebstormProjects\pink-treats-bakery\pink-treats-bakery\public" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pink-treats-bakery/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pink-treats-bakery/pink-treats-bakery/src/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -86,6 +120,10 @@
       <updated>1761763980253</updated>
       <workItem from="1761763981444" duration="228000" />
       <workItem from="1761764240054" duration="4760000" />
+      <workItem from="1764312175887" duration="3000" />
+      <workItem from="1765863292088" duration="233000" />
+      <workItem from="1765904987215" duration="2808000" />
+      <workItem from="1765909070201" duration="6393000" />
     </task>
     <task id="LOCAL-00001" summary="hamburger menu">
       <option name="closed" value="true" />
@@ -125,9 +163,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:react" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hamburger menu" />
     <MESSAGE value="shopping cart function added" />
-    <option name="LAST_COMMIT_MESSAGE" value="shopping cart function added" />
+    <MESSAGE value="react" />
+    <option name="LAST_COMMIT_MESSAGE" value="react" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/backend/routes/menu.js</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
