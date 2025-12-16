@@ -24,9 +24,18 @@ function App() {
     const [sessionId] = useState(getSessionId());
 
     useEffect(() => {
-        fetchMenu();
-        fetchCart();
-    }, []);
+        const loadData = async () => {
+            await fetchMenu();
+            try {
+                const response = await fetch(`${API_URL}/cart/${sessionId}`);
+                const data = await response.json();
+                setCart(data.items || []);
+            } catch (error) {
+                console.error('Error fetching cart:', error);
+            }
+        };
+        loadData();
+    }, [sessionId]);
 
     const fetchMenu = async () => {
         try {
@@ -40,15 +49,6 @@ function App() {
         }
     };
 
-    const fetchCart = async () => {
-        try {
-            const response = await fetch(`${API_URL}/cart/${sessionId}`);
-            const data = await response.json();
-            setCart(data.items || []);
-        } catch (error) {
-            console.error('Error fetching cart:', error);
-        }
-    };
 
     const addToCart = async (name, price) => {
         try {
@@ -244,9 +244,9 @@ function App() {
             <footer>
                 <p>Follow us for sweet updates!</p>
                 <div className="social-icons">
-                    <a href="#" className="social">Facebook</a>
-                    <a href="#" className="social">Instagram</a>
-                    <a href="#" className="social">Pinterest</a>
+                    <button className="social" onClick={() => {}}>Facebook</button>
+                    <button className="social" onClick={() => {}}>Instagram</button>
+                    <button className="social" onClick={() => {}}>Pinterest</button>
                 </div>
                 <p>&copy; 2025 Pink Treats Bakery. All rights reserved.</p>
             </footer>

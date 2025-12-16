@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d091d65-8c7a-4272-85a4-ea9a97985881" name="Changes" comment="react">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5d091d65-8c7a-4272-85a4-ea9a97985881" name="Changes" comment="react" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +68,7 @@
     "nodejs_interpreter_path": "C:/Users/mayat/AppData/Roaming/JetBrains/WebStorm2025.2/node/versions/24.11.0/node",
     "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -111,7 +110,7 @@
       <workItem from="1764312175887" duration="3000" />
       <workItem from="1765863292088" duration="233000" />
       <workItem from="1765904987215" duration="2808000" />
-      <workItem from="1765909070201" duration="8484000" />
+      <workItem from="1765909070201" duration="8837000" />
     </task>
     <task id="LOCAL-00001" summary="hamburger menu">
       <option name="closed" value="true" />
