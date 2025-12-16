@@ -3,7 +3,7 @@ import './App.css';
 import logo from './assets/images/Vanilla-Pink-Cupcake.png';
 import heroImage from './assets/images/pinkbakery.jpeg';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://pink-treats-bakery.onrender.com/api';
 
 const getSessionId = () => {
     let sessionId = localStorage.getItem('cartSessionId');
